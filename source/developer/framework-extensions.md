@@ -4,7 +4,9 @@ layout: developer-doc
 ---
 
 
-## Framework
+## Framework & Extensions
+
+### GWTP
 
 The console builds on the GWTP framework and inherits most it's features and framework services. 
 
@@ -17,7 +19,7 @@ These two along with the GWTP Placemanager [3] create the foundation for loading
 3. https://github.com/ArcBees/GWTP/wiki/PlaceManager
 
 
-## Extensions
+### Extensions
 
 The web console can extended using a compile time mechanism. Extensions are regular GWT modules that implement the SPI and follow some packaging conventions. Extension are provided as maven dependencies and pulled into the hal/release-stream build [1].
 
@@ -28,7 +30,7 @@ In order the get an idea how extensions are setup, build and integrated it's bes
 1. https://github.com/hal/release-stream/
 2. https://github.com/teiid/teiid-web-console/tree/teiid-console-parent-1.1.0.Final
 
-### Extension SPI
+#### Extension SPI
 
 The extension SPI has two main building blocks: 
 
@@ -37,7 +39,7 @@ The extension SPI has two main building blocks:
 
 **The Extension Point**
 
-In order to provide an extension point you need to implement a presenter-view (as described in the MVP section). For the extension to be discovered you need to annotate the Presenter proxy with a ```@SubsystemExtension``` declaration. 
+In order to provide an extension point you need to implement a presenter-view (as described in the MVP section). For the extension to be discovered you need to annotate the Presenter proxy with a ```@SubsystemExtension``` declaration.
 
 This instructs the SPI processor to include another place that represents your subsystem specific dialog:
 

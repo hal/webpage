@@ -1,7 +1,7 @@
 menu:
   Home: /
   Documentation:
-    Developer Docs: /developer
+    Developer Docs: /developer/getting-started.html
     WIKI:  //github.com/hal/docs/wiki/
   Community:
     Wildfly:  //wildfly.org
