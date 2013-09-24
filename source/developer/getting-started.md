@@ -6,8 +6,8 @@ layout: developer-doc
 ## Getting Started
 ### Prerequisites
 
-JDK 7
-WildFly 8
+- JDK 7
+- WildFly 8
 
 In order to work on the console you a need running WildFly instance on your local host. You can download it here:
 
