@@ -3,6 +3,12 @@ date: 2013-09-24 08:37:43
 layout: developer-doc
 ---
 
-## DMR Data Model
+## Core Services & Data Model
 
-## Dispatcher
+### The DMR Model
+
+### Dispatcher
+
+### Bootstrap Context
+
+### Place Manager

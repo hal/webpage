@@ -21,11 +21,11 @@ These two along with the GWTP Placemanager [3] create the foundation for loading
 
 ### Extensions
 
-The web console can extended using a compile time mechanism. Extensions are regular GWT modules that implement the SPI and follow some packaging conventions. Extension are provided as maven dependencies and pulled into the hal/release-stream build [1].
+The web console can be extended using a compile time mechanism. Extensions are regular GWT modules that implement the SPI and follow some packaging conventions. Extension are provided as maven dependencies and distributed through the hal/release-stream build [1].
 
-Every extension has access to the regular framework contract, all of it's services and the full dependency injection scope.
+Any extension has access to the regular framework contract, all of it's services and the full dependency injection scope.
 
-In order the get an idea how extensions are setup, build and integrated it's best to look at an example extension [2] build and hal/release-stream, which acts as an aggregator for extension that can be used across the board.
+In order the get an idea how extensions are setup, build and integrated it's best to look at an example [2] project and hal/release-stream, which acts as an aggregator for extensions that can be used across the board.
 
 1. https://github.com/hal/release-stream/
 2. https://github.com/teiid/teiid-web-console/tree/teiid-console-parent-1.1.0.Final
