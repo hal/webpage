@@ -84,7 +84,11 @@ In some cases you may want to bind both the AS and the hosted mode to a specific
 
 1.) start the AS on a specific address:
 
-	./bin/standalone.sh -Djboss.bind.address=192.168.2.126 -Djboss.bind.address.management=192.168.2.126`
+```
+    ./bin/standalone.sh
+        -Djboss.bind.address=192.168.2.126
+        -Djboss.bind.address.management=192.168.2.126
+```
 
 2.) launch hosted mode on a specific address:
 

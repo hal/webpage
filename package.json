@@ -2,5 +2,8 @@
   "name": "hal",
   "version": "2.2.0",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "hexo-generator-sitemap": "0.0.6",
+    "marked": "~0.2.9"
+  }
 }

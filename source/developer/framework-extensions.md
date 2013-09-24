@@ -39,7 +39,7 @@ The extension SPI has two main building blocks:
 
 **The Extension Point**
 
-In order to provide an extension point you need to implement a presenter-view (as described in the MVP section). For the extension to be discovered you need to annotate the Presenter proxy with a ```@SubsystemExtension``` declaration.
+In order to provide an extension point you need to implement a presenter-view (as described in the MVP section). For the extension to be discovered you need to annotate the Presenter proxy with a '@SubsystemExtension' declaration.
 
 This instructs the SPI processor to include another place that represents your subsystem specific dialog:
 
@@ -58,18 +58,18 @@ public interface MyProxy
 
 The extension will be loaded, initialised and revealed automatically by the core framework according to the following criteria:
 
-- ```name``` & ```group``` declarations: The link name and the group for the left hand side navigation.
-- ```key```: the subsystem as it is referred to in the DMR model. If the subsystem doesn't exist, the dialog will not be shown.
+- 'name' & 'group' declarations: The link name and the group for the left hand side navigation.
+- 'key': the subsystem as it is referred to in the DMR model. If the subsystem doesn't exist, the dialog will not be shown.
 
 **Gin Mixins**
 
 The mixins are needed to extend the dependency injection scope and wire up your presenters-views couples and other utility classes (if needed).
 
-A mixin is declared both as a binding and model extension. The ```@GinExtension``` value refers the GWT module descriptor used with the extension.
+A mixin is declared both as a binding and model extension. The '@GinExtension' value refers the GWT module descriptor used with the extension.
 
 The injection points:
 
-```java
+``` java
 @GinExtension("org.jboss.as.console.TeiidExtension")
 public interface Extension {
     AsyncProvider<TransportPresenter> getTransportPresenter();
@@ -78,7 +78,7 @@ public interface Extension {
 
 The actual binding:
 
-```java
+``` java
 @GinExtensionBinding
 public class ExtensionBinding extends AbstractPresenterModule {
 

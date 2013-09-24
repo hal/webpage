@@ -76,6 +76,10 @@ disqus_shortname:
 theme: bitrap
 exclude_generator:
 
+# Plugins
+plugins:
+- hexo-marked
+
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
