@@ -12,10 +12,6 @@
 
 <%- partial('google_analytics') %>
 
-
-<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
-<script src="<%- config.root %>js/gallery.js"></script>
-
 <% if (config.disqus_shortname){ %>
 <script type="text/javascript">
 var disqus_shortname = '<%= config.disqus_shortname %>';
@@ -29,8 +25,6 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 }());
 </script>
 <% } %>
-
-
 
 <% if (theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />

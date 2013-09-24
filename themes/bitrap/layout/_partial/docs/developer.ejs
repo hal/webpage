@@ -1,21 +1,24 @@
-<div class="container">
-    <article class="<%= item.layout %>">
-        <div class="row">
+
+<div class="container-fluid">
+
+        <div class="row-fluid">
 
             <!--Sidebar content-->
-            <div class="span2">
+            <div class="span3">
 
-                <ul class="nav nav-list">
-                    <li><%- link_to('/developer/getting-started.html', 'Getting Started') %></li>
-                    <li><%- link_to('/developer/framework-extensions.html', 'Framework + Extensions') %></li>
-                    <li><%- link_to('/developer/look-and-feel.html', 'Look + Feel') %></li>
-                    <li><%- link_to('/developer/services-data-model.html', 'Services + Data Model') %></li>
-                    <li><%- link_to('/developer/security.html', 'Security') %></li>
-                </ul>
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li><%- link_to('/developer/getting-started.html', 'Getting Started') %></li>
+                        <li><%- link_to('/developer/framework-extensions.html', 'Framework + Extensions') %></li>
+                        <li><%- link_to('/developer/look-and-feel.html', 'Look + Feel') %></li>
+                        <li><%- link_to('/developer/services-data-model.html', 'Services + Data Model') %></li>
+                        <li><%- link_to('/developer/security.html', 'Security') %></li>
+                    </ul>
+                </div>
             </div>
 
             <!--Body content-->
-            <div class="span10 article-main">
+            <div class="span9 article-main">
                 <header>
                     <div class="article-title">
                         <%- partial('post/title') %>
@@ -33,5 +36,5 @@
                 </div></footer>
             </div>
         </div>
-    </article>
+
 </div>

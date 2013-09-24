@@ -1,10 +1,17 @@
-<!-- Navbar
-================================================== -->
-<nav class='navbar navbar-fixed-top'>
+<!-- Navbar ================================================== -->
+<div class='navbar navbar-inverse navbar-fixed-top'>
   <div class='navbar-inner'>
-    <div class='container'>
-      <a class="brand" href="<%- config.root %>"><%= config.title %></a>
-      <div class='nav-collapse'>
+    <div class='container-fluid'>
+
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <a class="brand" href="<%- config.root %>"><%= config.title %></a>
+      <div class='nav-collapse collapse'>
+
 <!-- main menu -->
 <ul class='nav'>
 <%  for (var i in theme.menu) { %>
@@ -44,6 +51,4 @@
       </div><!--/.nav-collapse -->
     </div>
   </div>
-
-  <div class="tagcloud" id="fbox-tagcloud" style="margin:10px; display:none; overflow: hidden"><%- tagcloud(site.tags, { "min_font": 12, "max_font": 24, "amount": 80,}) %></div>
-</nav>
+</div>
