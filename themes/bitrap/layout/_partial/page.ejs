@@ -1,0 +1,30 @@
+<div class="container">
+    <article class="<%= item.layout %>">
+        <div class="row">
+
+            <!--Sidebar content-->
+            <div class="span2">
+
+            </div>
+
+            <!--Body content-->
+            <div class="span10 article-main">
+                <header>
+                    <div class="article-title">
+                        <%- partial('post/title') %>
+                    </div>
+                </header>
+                <div class="article-entry">
+                    <% if (item.excerpt && index){ %>
+                    <%- item.excerpt %>
+                    <% } else { %>
+                    <%- item.content %>
+                    <% } %>
+                </div>
+                <footer><div class="article-comment">
+                    <%- partial('comment') %>
+                </div></footer>
+            </div>
+        </div>
+    </article>
+</div>

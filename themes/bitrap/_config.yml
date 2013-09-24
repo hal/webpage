@@ -16,12 +16,12 @@ excerpt_link: Read More
 addthis:
   enable: true
   pubid:
-  facebook: true
+  facebook: false
   twitter: true
   google: true
-  pinterest: true
+  pinterest: false
 
-fancybox: true
+fancybox: false
 
 google_analytics:
 rss:
