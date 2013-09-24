@@ -1,0 +1,34 @@
+<div class="container">
+<article class="<%= item.layout %>">
+  <div class="row">
+
+    <!-- article.meta -->
+    <div class="span1 article-meta">
+      <div class="date"><time datetime="<%= item.date.toDate().toISOString() %>">
+        <div class="day"><%= item.date.format("D") %></div>
+        <div class="month"><%=  item.date.format("MMM YYYY") %></div>
+      </time></div>
+      <div class="article-tags">
+        <%- partial('post/tag') %>
+      </div>
+    </div>
+
+    <!-- article main -->
+    <div class="span11 article-main">
+      <header><div class="article-title">
+        <%- partial('post/title') %>
+      </div></header>
+      <div class="article-entry">
+        <% if (item.excerpt && index){ %>
+          <%- item.excerpt %>
+        <% } else { %>
+          <%- item.content %>
+        <% } %>
+      </div>
+      <footer><div class="article-comment">
+        <%- partial('comment') %>
+      </div></footer>
+    </div>
+  </div>
+</article>
+</div>

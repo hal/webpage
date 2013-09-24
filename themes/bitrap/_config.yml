@@ -1,0 +1,27 @@
+menu:
+  Home: /
+  Documentation:
+    Developer Docs: /developer
+    WIKI:  //github.com/hal/docs/wiki/
+  Community:
+    Wildfly:  //wildfly.org
+    Mailing List:  //lists.jboss.org/mailman/listinfo/wildfly-dev
+    IRC:  //freenode.net#wildlfy-management
+
+extmenu:
+  Github: //github.com/hal
+
+excerpt_link: Read More
+
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics:
+rss:

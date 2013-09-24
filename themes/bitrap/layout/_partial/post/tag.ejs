@@ -1,0 +1,5 @@
+<% if (item.tags && item.tags.length){ %>
+  <% item.tags.forEach(function(tag) { %>
+    <a href='<%= config.root + tag.path %>'><span class='label pull-right' style='margin:3px;'><%= tag.name %></span></a>
+  <% }); %>
+<% } %>
