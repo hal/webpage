@@ -87,10 +87,8 @@ public class ExtensionBinding extends AbstractPresenterModule {
         bindPresenter(TransportPresenter.class,
         		TransportPresenter.MyView.class,
                 TransportView.class,
-                TransportPresenter.MyProxy.class);                        
+                TransportPresenter.MyProxy.class);
     }
-
-
 }
 ```
 
