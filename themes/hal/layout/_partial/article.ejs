@@ -1,3 +1,11 @@
+<% if(is_post()) {%>
+<ol class="breadcrumb">
+    <li><%- link_to('/blog/index.html', 'Blog') %></li>
+    <li>/</li>
+    <li class="active"><%- item.title %></li>
+</ol>
+<% }%>
+
 <article class="<%= item.layout %>">
   <div class="row">
 
