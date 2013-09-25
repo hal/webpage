@@ -84,6 +84,7 @@ plugins:
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
-  type:
+  type: github
+  repository: http://github.com/hal/hal.github.io.git
 
 
