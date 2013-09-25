@@ -1,4 +1,4 @@
-# The HAL webpage and documentation repository
+# Webpage and Documentation repository
 
 ## Setup
 
