@@ -1,9 +1,8 @@
 title: Look & Feel
 date: 2013-09-24 08:37:43
-layout: developer-doc
+layout: page
 ---
 
-## Look & Feel
 ### Widgets
 
 HAL builds on the default GWT widgets [1], with minor modifications to provide a consistent look&feel (css references, image bundles, etc)
