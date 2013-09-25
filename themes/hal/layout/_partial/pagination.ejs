@@ -1,11 +1,11 @@
-<div class="container">
+<div class="pagination">
   <div class="row">
-    <div class="span2 offset1 bitpager">
+    <div class="span2 offset2 bitpager">
       <% if (page.prev){ %>
       <a href="<%- config.root %><%- page.prev_link %>">&larr; <%= __('prev') %></a>
       <% } %>
     </div>
-    <div class="span2 offset7 bitpager">
+    <div class="span2 offset6 bitpager">
       <% if (page.next){ %>
       <a href="<%- config.root %><%- page.next_link %>" class="pull-right"><%= __('next') %> &rarr;</a>
       <% } %>
