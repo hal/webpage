@@ -2,17 +2,22 @@
 
 <body>
 
-  <!-- header -->
-  <%- partial('_partial/header') %>
+    <div id="content" class="container">
+        <!-- header -->
+        <%- partial('_partial/header') %>
 
-  <!-- body -->
-  <%- body %>
+        <!-- body -->
+        <%- body %>
 
-  <!-- footer-->
-  <div class="clearfix"></div>
-  <%- partial('_partial/footer') %>
+    </div>
 
-  <!-- js  -->
-  <%- partial('_partial/after_footer') %>
-</body>
+    <!-- footer-->
+    <footer class="container">
+        <%- partial('_partial/footer') %>
+    </footer>
+
+    <!-- js  -->
+    <%- partial('_partial/after_footer') %>
+
+    </body>
 </html>

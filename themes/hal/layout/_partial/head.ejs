@@ -40,14 +40,12 @@
     <link href="<%- config.root %>favicon.png" rel="icon"/>
     <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml"/>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" media="screen" type="text/css"/>
+    <!--link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" media="screen" type="text/css"/-->
+    <link rel="stylesheet" media="screen" href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community.min.css">
 
 
     <style type="text/css">
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
+
         .sidebar-nav {
             padding: 9px 0;
         }
@@ -73,7 +71,20 @@
         .carousel-inner h3 {
             color:#ffffff;
         }
+
+        .banner {
+            background-color:#566B7E;
+            height: 110px;
+        }
+
+        .banner h1 {
+            color:#ffffff;
+            padding-top:60px;
+            padding-left:15px;
+        }
+
     </style>
+
 
     <link rel="stylesheet" href="<%- config.root %>css/responsive.css" type="text/css"/>
     <link rel="stylesheet" href="<%- config.root %>css/syntax.css" type="text/css"/>
