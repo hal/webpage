@@ -1,12 +1,3 @@
-
-<% if(is_post()) {%>
-<ol class="breadcrumb">
-    <li><%- link_to('/blog/index.html', 'Blog') %></li>
-    <li>/</li>
-    <li class="active"><%- item.title %></li>
-</ol>
-<% }%>
-
 <article class="<%= item.layout %>">
   <div class="row">
 
@@ -19,11 +10,9 @@
           <span class="year"><%= item.date.format("YYYY") %></span>
         </time>
       </div>
-      <% if(is_post()) {%>
       <div class="post-tags">
         <%- partial('post/tag') %>
       </div>
-      <% }%>
     </div>
 
     <!-- article main -->
