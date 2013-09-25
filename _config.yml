@@ -79,6 +79,7 @@ exclude_generator:
 # Plugins
 plugins:
 - hexo-marked
+- hexo-sidebar
 
 # Deployment
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
