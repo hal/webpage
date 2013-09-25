@@ -1,40 +1,57 @@
-.date .day {
-    
-}
-
-.date .month {
-    
-}
-
-.date .year {
-    
-}
-
-.article-tags {
-    
+/*
+ * bootstrap adjustments 
+ */
+.banner a:hover {
+    text-decoration: none;
 }
 
 /*
- * Media queries from 
- * http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community.css
+ * HAL specific styles  
  */
-@media (min-width: 768px) and (max-width: 979px) {
-    
+.article-meta {
+    margin-top: 20px;
+    color: #999;
+    font-weight: 200;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-@media (max-width: 767px) {
-    
+.date {
 }
 
-@media (min-width: 1200px) {
-    
+.date .day {
+    font-size: 2em;
 }
 
-@media (max-width: 480px) {
-    
+.date .month {
 }
 
-@media (max-width: 979px) {
-    
+.date .year {
 }
 
+.post-tags {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.post-tags a {
+    color: #999;
+    display: block;
+}
+
+.post-tags a:hover {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+
+.post-tags .post-tag::before {
+    content: "\f02b"; /* icon-tag */
+    font-family: FontAwesome;
+    padding-right: 10px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
