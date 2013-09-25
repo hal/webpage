@@ -1,5 +1,5 @@
 menu:
-  Home: /
+  Blog: /blog
   Documentation:
     Developer Docs: /developer/getting-started.html
     WIKI:  //github.com/hal/docs/wiki/
