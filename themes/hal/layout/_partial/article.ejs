@@ -1,12 +1,22 @@
 
+<% if(is_post()) {%>
+<ol class="breadcrumb">
+    <li><%- link_to('/blog/index.html', 'Blog') %></li>
+    <li>/</li>
+    <li class="active"><%- item.title %></li>
+</ol>
+<% }%>
+
 <article class="<%= item.layout %>">
   <div class="row">
 
     <!-- article.meta -->
     <div class="span2 article-meta">
       <div class="date"><time datetime="<%= item.date.toDate().toISOString() %>">
-        <div class="day"><%= item.date.format("D") %></div>
-        <div class="month"><%=  item.date.format("MMM YYYY") %></div>
+        <span class="label label-default" style="margin-left:15px; margin-top:15px">
+            <%= item.date.format("D") %>
+            <%=  item.date.format("MMM YYYY") %>
+        </span>
       </time></div>
       <div class="article-tags">
         <%- partial('post/tag') %>
