@@ -4,9 +4,10 @@ menu:
     Developer Docs: /developer/getting-started.html
     WIKI:  //github.com/hal/docs/wiki/
   Community:
-    Wildfly:  //wildfly.org
+    Issue Tracking: //issues.jboss.org/browse/HAL
     Mailing List:  //lists.jboss.org/mailman/listinfo/wildfly-dev
     IRC:  //freenode.net#wildlfy-management
+    Wildfly:  //wildfly.org
 
 extmenu:
   Github: //github.com/hal
