@@ -12,15 +12,18 @@
 
     <!-- article.meta -->
     <div class="span2 article-meta">
-      <div class="date"><time datetime="<%= item.date.toDate().toISOString() %>">
-        <span class="label label-default" style="margin-left:15px; margin-top:15px">
-            <%= item.date.format("D") %>
-            <%=  item.date.format("MMM YYYY") %>
-        </span>
-      </time></div>
-      <div class="article-tags">
+      <div class="date">
+        <time datetime="<%= item.date.toDate().toISOString() %>">
+          <span class="day"><%= item.date.format("DD") %></span>
+          <span class="month"><%= item.date.format("MM") %></span>
+          <span class="year"><%= item.date.format("YYYY") %></span>
+        </time>
+      </div>
+      <% if(is_post()) {%>
+      <div class="post-tags">
         <%- partial('post/tag') %>
       </div>
+      <% }%>
     </div>
 
     <!-- article main -->

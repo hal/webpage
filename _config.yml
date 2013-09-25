@@ -16,7 +16,7 @@ url: http://hal.github.io/docs
 root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
-archive_dir: archives
+archive_dir: blog
 category_dir: categories
 code_dir: downloads/code
 
@@ -43,7 +43,7 @@ tag_map:
 ## 2: Enable pagination
 ## 1: Disable pagination
 ## 0: Fully Disable
-archive: 0
+archive: 2
 category: 2
 tag: 2
 
