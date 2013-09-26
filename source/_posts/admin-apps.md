@@ -1,6 +1,6 @@
 title: "Admin Apps"
 date: 2013-07-18 11:46
-tags: [jboss,console,mobile]
+categories: [jboss, console, mobile]
 ---
 If you ever wanted to administer your JBoss servers from your iOS or Andoird phone, checkout these great apps from 
 [Christos Vasilakis](https://twitter.com/cvasilak): 

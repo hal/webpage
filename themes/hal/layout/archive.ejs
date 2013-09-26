@@ -1,1 +1,14 @@
-<%- partial('_partial/archive', {pagination: config.archive}) %>
+
+<div class="row">
+
+    <div class="span3">
+        <% if(is_archive()) {%>
+        <%- partial('_partial/categories.ejs') %>
+        <% }%>
+    </div>
+
+    <div class="span9">
+        <%- partial('_partial/archive', {pagination: config.archive}) %>
+    </div>
+
+</div>

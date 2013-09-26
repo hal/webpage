@@ -1,0 +1,11 @@
+<% if (site.categories && site.categories.length){ %>
+<div class="well sidebar-nav">
+<ul class="nav nav-list">
+    <li class="nav-header">Categories</li>
+    <% site.categories.forEach(function(cat) { %>
+    <li><a href="<%- config.root %><%- cat.path.toLowerCase() %>"><%= cat.name %></a></li>
+    <% }); %>
+
+</ul>
+</div>
+<% } %>
