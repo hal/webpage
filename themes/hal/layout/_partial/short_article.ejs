@@ -1,9 +1,21 @@
 
 <article class="<%= item.layout %>">
 
-    <header><div class="page-header">
-        <%- partial('post/title') %>
-    </div></header>
+    <header>
+        <div>
+            <%- partial('post/title') %>
+
+            <i class="icon-calendar"></i>
+            <time datetime="<%= item.date.toDate().toISOString() %>">
+                <span class="day"><%= item.date.format("DD") %></span> /
+                <span class="month"><%= item.date.format("MM") %></span> /
+                <span class="year"><%= item.date.format("YY") %></span>
+            </time>
+
+        </div>
+    </header>
+    <p/>
+
     <div class="article-entry">
         <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
@@ -16,4 +28,7 @@
     </div></footer>
 
 </article>
+
+<hr/>
+<p/>
 

@@ -1,5 +1,5 @@
 <% if (item.tags && item.tags.length){ %>
-  <span class="visible-phone"><i class="icon-tags"></i></span>
+  <i class="icon-tags"></i>
   <% item.tags.forEach(function(tag) { %>
     <a href='<%= config.root + tag.path %>'><span class='post-tag'><%= tag.name %></span></a>
   <% }); %>

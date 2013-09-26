@@ -18,21 +18,22 @@
 
         <article class="<%= item.layout %>">
             <header>
-                <div class="page-header">
+                <div>
                     <%- partial('post/title') %>
-                </div>
-                <!--div class="date"-->
-                Date: <time datetime="<%= item.date.toDate().toISOString() %>">
-                <span class="day"><%= item.date.format("DD") %></span> /
-                <span class="month"><%= item.date.format("MM") %></span> /
-                <span class="year"><%= item.date.format("YY") %></span>
-            </time><br/>
-                <!--/div-->
-                Tags: <%- partial('post/tag') %>
-                <!--div class="post-tags">
-                </div-->
 
+                    <i class="icon-calendar"></i>
+                    <time datetime="<%= item.date.toDate().toISOString() %>">
+                        <span class="day"><%= item.date.format("DD") %></span> /
+                        <span class="month"><%= item.date.format("MM") %></span> /
+                        <span class="year"><%= item.date.format("YY") %></span>
+                    </time>
+                    <br/>
+
+                     <%- partial('post/tag') %>
+
+                </div>
            </header>
+            <p/>
             <div class="article-entry">
                 <% if (item.excerpt && index){ %>
                 <%- item.excerpt %>
