@@ -1,6 +1,6 @@
 title: "Independent JBoss Admin Console"
 date: 2013-03-05 21:43
-tags: [jboss,console]
+categories: [jboss,console]
 ---
 We're currently working on a new feature for the JBoss Admin Console. The console should become independent from the
 rest of the JBoss AS distribution. As the console is built with GWT and "merely" consists of static resources like

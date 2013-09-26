@@ -1,6 +1,6 @@
 title: Flow Control
 date: 2013-09-25 12:10:28
-tags:
+categories: [gwt]
 ---
 
 Within Ajax applications you need to manage a lot of interaction and RPC related asynchronous events. The control flow structures become hard to understand and yield unpredicatable results.
