@@ -1,1 +1,7 @@
+<ol class="breadcrumb">
+    <li><%- link_to('/blog/index.html', 'Tags') %></li>
+    <li>/</li>
+    <li class="active"><%- page.tag %></li>
+</ol>
+
 <%- partial('_partial/archive', {pagination: config.tag}) %>
