@@ -1,7 +1,7 @@
 menu:
   Blog: /blog/index.html
   Documentation:
-    Developer Docs: /developer/getting-started.html
+    Developer: /developer/getting-started.html
     WIKI:  //github.com/hal/docs/wiki/
   Community:
     Issue Tracking: //issues.jboss.org/browse/HAL
