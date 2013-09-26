@@ -1,6 +1,5 @@
-
 <div class="row-fluid">
-    <div class="span3">
+    <div class="span2 offset2">
         <h4>Navigate</h4>
         <ul>
             <li><%- link_to('/', 'Home') %></li>
@@ -9,7 +8,7 @@
         </ul>
     </div>
 
-    <div class="span3">
+    <div class="span2">
         <h4>Contribute</h4>
         <ul>
             <li> <a title="Submit a bug" href="https://issues.jboss.org/browse/HAL">Submit a bug</a> </li>
@@ -17,7 +16,7 @@
         </ul>
     </div>
 
-    <div class="span3">
+    <div class="span2">
         <h4>Follow Us</h4>
         <ul>
             <li> <a title="Blog" href="/blog/index.html">Blog</a> </li>
@@ -25,7 +24,7 @@
         </ul>
     </div>
 
-    <div class="span3">
+    <div class="span2">
         <h4>Open Source</h4>
         <p> HAL is released under the <b>LGPL</b> open source license.</b>
             Learn more about the LGPL license <a href="http://de.wikipedia.org/wiki/GNU_Lesser_General_Public_License">here.</a>
@@ -33,12 +32,18 @@
     </div>
 </div>
 
-<div class="span12">
-<p style="margin-top: 5px; font-size: 80%;">
-<% if (config.author){ %>
-    &copy; <%= new Date().getFullYear() %> <%= config.author %> All Rights Reserved
-    <% } else { %>
-    &copy; <%= new Date().getFullYear() %> <%= config.title %> All Rights Reserved
-    <% } %>
-</p>
+<div class="row-fluid">
+    <div class="span10 offset2">
+        <p style="margin-top: 5px; font-size: 80%;">
+        <% if (config.author){ %>
+            &copy; <%= new Date().getFullYear() %> <%= config.author %> All Rights Reserved
+            <% } else { %>
+            &copy; <%= new Date().getFullYear() %> <%= config.title %> All Rights Reserved
+        <% } %>
+        <br/>
+        <i class="icon-fire"></i> Made with 
+        <a href="https://github.com/jbossorg/bootstrap-community" style="text-decoration: underline;" target="_NEW">JBoss Community Bootstrap</a> and 
+        <a href="http://zespia.tw/hexo/" style="text-decoration: underline;" target="_NEW">Hexo</a> 
+        </p>
+    </div>
 </div>
