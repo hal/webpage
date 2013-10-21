@@ -14,8 +14,8 @@ the Java API is very rich and powerful it is somewhat hard to write scripts that
 To address this challenges we created different client libraries for different languages:
   
 # Scala
-The scala library is hosted at [DMR.scala](https://github.com/hpehl/dmr.scala). The 
-[DMR.repl](https://github.com/heiko-braun/dmr-repl) library leverages the Scala REPL to execute DMR operations in 
+The scala library is hosted at [DMR.scala](https://github.com/hal/dmr.scala). The
+[DMR.repl](https://github.com/hal/dmr.repl) library leverages the Scala REPL to execute DMR operations in
 a very interactive way.
 
 # Dart
