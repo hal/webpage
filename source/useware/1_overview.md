@@ -1,4 +1,7 @@
-## Useware Kernel
+title: Abstract Interfaces Models
+date: 2013-09-24 08:37:43
+layout: page
+---
 
 ### Background
 The strategy for managing Wildfly installations is moving to a "core distribution plus add-ons" strategy.
