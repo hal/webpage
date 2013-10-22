@@ -8,25 +8,20 @@ layout: page
 - JDK 7
 - WildFly 8
 
-In order to work on the console you a need running WildFly instance on your local host. You can download it here:
-
-http://www.wildfly.org/download/
+In order to work on the console you a need running [WildFly](http://www.wildfly.org/) instance on your local host.
+You can download it from the [Wildfly homepage](http://www.wildfly.org/download/).
 
 You can run WildFly in either the 'domain' or 'standalone' mode.
 
 ### Introduction to GWT
 
-If you are not familiar with GWT, I would recommend you read at least the introduction documents:
-
-http://www.gwtproject.org/gettingstarted.html
+If you are not familiar with GWT, I would recommend you read at least [the introduction documents](http://www.gwtproject.org/gettingstarted.html).
 
 ### The GWTP Framework
 
-The web console relies on the GWTP framework that provides the core design patterns (MVP), navigation handling and IOC support. 
+The web console relies on the [GWTP framework](https://github.com/arcbees/gwtp/) that provides the core design patterns (MVP), navigation handling and IOC support.
 
-It's useful to understand the building blocks before you dive into the code base.
-
-https://github.com/arcbees/gwtp/wiki
+It's useful to understand the [building blocks](https://github.com/arcbees/gwtp/wiki) before you dive into the code base.
 
 ### Build and Deploy
 
@@ -35,15 +30,17 @@ https://github.com/arcbees/gwtp/wiki
 2. Make sure you build the top level module first (mvn -Pdev clean install).
 3. cd 'build/app'
 
+<div class="alert alert-info">
+You need to add user with WildFly add-user.sh script.
+</div>
+
 Start the GWT shell with
 
 	mvn gwt:<run|debug>
 
 When the hosted browser is started, it's enough to hit the 'refresh' button to recompile
 and verify changes. You can get the OOPHM Plugin, required for attaching your browser to the
-hosted mode execution here: http://gwt.google.com/samples/MissingPlugin/MissingPlugin.html
-
-NOTE: you need to add user with WildFly add-user script.
+hosted mode execution on the [GWT Plugin homepage](http://gwt.google.com/samples/MissingPlugin/MissingPlugin.html).
 
 #### Running in web mode
 
