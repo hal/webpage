@@ -1,4 +1,4 @@
-title: Core Services & Data Model
+title: Data Model
 date: 2013-09-24 08:37:43
 layout: page
 ---
@@ -11,7 +11,7 @@ RPC capabilities to integrate with the wildlfy management layer. Any management 
 Before you get started it's good to make yourself familiar with the [core management concepts](https://docs.jboss.org/author/display/AS71/Core+management+concepts)
 and the characteristics of [management resources](https://docs.jboss.org/author/display/AS71/Management+resources) in general.
 
-### Dispatcher
+### Dispatcher Service
 
 The [dispatcher library](https://github.com/hal/core/tree/master/dmr) provides the API and services
 to execute management operations against the wildfly management layer. It uses HTTP as the transport and DMR as the wire format.
@@ -147,17 +147,8 @@ public interface CoreBeanFactory {
 }
 ```
 
-
-
 <div class="alert alert-info">
-[Extension providers](/developer/4_framework-extensions.html) can rely on the @BeanFactoryExtension declaration to have separate AutoBean factory definitions
+[Extension providers](/developer/4_console-extensions.html) can rely on the @BeanFactoryExtension declaration to have separate AutoBean factory definitions
  outside the scope of the core console.
 </div>
 
-### Place Manager
-
-The [PlaceManager](https://github.com/ArcBees/GWTP/wiki/PlaceManager) is a facility provided by the GWTP framework that
-provides the loading and initialisation and display of Presenter-View tuples that are bound to a specific URL (aka token).
-
-It order get an idea how place management works in general and how you can wire up your own places, I'd suggest you take a look at the
-[GWTP documentation](https://github.com/ArcBees/GWTP/wiki/PlaceManager).
