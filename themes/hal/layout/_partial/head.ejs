@@ -17,13 +17,13 @@
   <title><%= title.join(' | ') %></title>
   <% if (config.author){ %><meta name="author" content="<%= config.author %>"><% } %>
   <% if (page.description){ %>
-  <meta name="description" content="<%= page.description %>">
+  <meta name="description" content="<%= page.description %>"/>
   <% } else if (config.description){ %>
-  <meta name="description" content="<%= config.description %>">
+  <meta name="description" content="<%= config.description %>"/>
   <% } else if (page.excerpt){ %>
-  <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
+  <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>"/>
   <% } else if (page.content){ %>
-  <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+  <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>"/>
   <% } %>
   <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -41,7 +41,7 @@
     <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml"/>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--link rel="stylesheet" href="<%- config.root %>css/bootstrap.css" media="screen" type="text/css"/-->
-    <link rel="stylesheet" media="screen" href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community.min.css">
+    <link rel="stylesheet" media="screen" href="http://static.jboss.org/theme/css/bootstrap-community/2.3.1.1/bootstrap-community.min.css"/>
 
 
     <style type="text/css">

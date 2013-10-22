@@ -1,7 +1,8 @@
 menu:
   Blog: /blog/index.html
   Documentation:
-    Developer: /developer/getting-started.html
+    Developer: /developer/1_getting-started.html
+    Useware: /useware/1_overview.html
     WIKI:  //github.com/hal/docs/wiki/
   Community:
     Issue Tracking: //issues.jboss.org/browse/HAL
