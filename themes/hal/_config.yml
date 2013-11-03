@@ -2,7 +2,7 @@ menu:
   Blog: /blog/index.html
   Documentation:
     Developer: /developer/1_getting-started.html
-    Useware: /useware/1_overview.html
+    Interface Kernel: /mbui/1_overview.html
     WIKI:  //github.com/hal/docs/wiki/
   Community:
     Issue Tracking: //issues.jboss.org/browse/HAL
