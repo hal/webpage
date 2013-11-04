@@ -95,7 +95,7 @@ In future versions thr AutoBean mapping will not be required anymore.
 We are already working on a different design that fully leverages the DMR meta data and provides
 transparent mappings to default GWT widgets.
 <p/>
-For further information please refer to the [Useware Documentation](/useware/1_overview.html)
+For further information please refer to the [Interface Kernel Documentation](/mbui/1_overview.html)
 </div>
 
 #### Entity Meta Data

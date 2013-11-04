@@ -78,23 +78,20 @@ The model itself can either be provided through an API or as a XML file (remote 
 
 ```
 <div class="alert alert-info">
-Midterm we plan to provide a shared dialog repository that both users and subsystems developers can contribute to.
+We plan to provide a shared dialog repository that both users and subsystems developers can contribute to.
 </div>
 
 #### Final User Interface
 
 Reification is the process of turning the model into a final user interface.
 The kernel uses the behaviour mappings to fetch the necessary management resource meta data (attributes, operations, etc)
-and generates the final, platform specific representation to be used within the web console (GWT in this case).
+and generates the final, platform specific representation to be used within the web console.
 
 {% img  /images/tx-reify.png %}
 
 <p/>
-For the sake of brevity we demonstrate a simple example (Wildfly transaction subsystem).
-But to verify the expressiveness of the model we did use a number of fairly complex screens
-and tried to recreate them using the model based approach.
-
-So far we've been able to create the same interfaces, with almost no information loss.
+For the sake of brevity we used a simple example (Wildfly transaction subsystem) here.
+You can find more complex ones in the [repository](https://github.com/hal/core).
 
 <div class="alert alert-info">
 These examples are taken from the MBUI workbench that ships with the web console. It's enabled when running in development mode.
