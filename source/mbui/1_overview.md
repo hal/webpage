@@ -3,6 +3,8 @@ date: 2013-09-24 08:37:43
 layout: page
 ---
 
+<span class="label label-info">Since 2.0</span>
+
 ### Background
 
 The first iteration of the console did focus on providing the main building blocks (components, services, etc)
