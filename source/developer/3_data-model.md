@@ -6,7 +6,7 @@ layout: page
 ### The DMR Model
 
 The [DMR Model](https://docs.jboss.org/author/display/AS71/Management+resources) provides the core data format and
-RPC capabilities to integrate with the wildlfy management layer. Any management use case implemented in HAL leverages DMR for data retrieval and execution of management operations.
+RPC capabilities to integrate with the wildfly management layer. Any management use case implemented in HAL leverages DMR for data retrieval and execution of management operations.
 <p/>
 Before you get started it's good to make yourself familiar with the [core management concepts](https://docs.jboss.org/author/display/AS71/Core+management+concepts)
 and the characteristics of [management resources](https://docs.jboss.org/author/display/AS71/Management+resources) in general.
