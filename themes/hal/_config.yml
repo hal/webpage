@@ -7,7 +7,7 @@ menu:
   Community:
     Issue Tracking: //issues.jboss.org/browse/HAL
     Mailing List:  //lists.jboss.org/mailman/listinfo/wildfly-dev
-    IRC:  //freenode.net#wildlfy-management
+    IRC:  //freenode.net#wildfly-management
     Wildfly:  //wildfly.org
 
 extmenu:
