@@ -81,10 +81,11 @@ plugins:
 - hexo-marked
 - hexo-sidebar
 
-# Deployment
+# Deployment to http://hal.github.io is no longer supported!
+# http://hal.github.io hosts the different HAL management release streams.
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
-deploy:
-  type: github
-  repository: https://github.com/hal/hal.github.io.git
+# deploy:
+#  type: github
+#  repository: https://github.com/hal/hal.github.io.git
 
 
