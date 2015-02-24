@@ -1,6 +1,6 @@
 # Webpage and Documentation repository
 
-**Dprecated** 
+**Deprecated** 
 
 > Please note that this repository will no longer be updated. The content will be moved to the [HAL GitBook](http://hal.gitbooks.io/dev/content/). If you setup this repository locally, follow the steps below.
 
